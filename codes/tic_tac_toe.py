@@ -155,6 +155,7 @@ def computer_choice(symbol):
 
 def end_Game():
     print("Thanks for trying out my game")
+    quit()
 
 row1 = ['1', '2', '3']
 row2 = ['4', '5', '6']
