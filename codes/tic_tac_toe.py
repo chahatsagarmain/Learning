@@ -17,14 +17,19 @@ def game_mechanic(p, c):
                 print("You have won!!!")
                 grid(row1,row2,row3)
                 end_Game()
-                break
+                
             if loss == 1:
                 print('You have lost')
                 grid(row1,row2,row3)
                 end_Game()
-                break
+                
 
-        
+        if i >= 8 :
+            check_tie()
+            grid(row1,row2,row3)
+            end_Game()
+            
+            
         i = i + 1
         player_choice(p)
         player_result(p)
@@ -156,6 +161,11 @@ def computer_choice(symbol):
 def end_Game():
     print("Thanks for trying out my game")
     quit()
+    
+
+def check_tie():
+    if win == 0 and loss == 0 : 
+        print("The match is tied")    
 
 row1 = ['1', '2', '3']
 row2 = ['4', '5', '6']
