@@ -18,13 +18,14 @@ para = f"The Todays Featured article on Wikipedia \n{temp}"
 print(para)
 
 smtp = smtplib.SMTP('smtp.gmail.com', 587)
-smtp.ehlo()
-smtp.starttls()
+smtp.ehlo()#checks if the domain is working
+smtp.starttls()#starts an end to end enscription
 
 
-to ={"to address","to address"}
-from_email = "from"
-subject = 'Your daily dose of automated email'
+to ={"to address","to address"}#the email your  sending it from
+
+from_email = "from"#email of the person who will recieve it
+subject = 'Your daily dose of automated email'#subject of the email
 
 msgg = EmailMessage()
 msgg['From'] = from_email
