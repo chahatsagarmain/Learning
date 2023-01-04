@@ -1,0 +1,8 @@
+#!/bin/bash
+#  the above line is shebang line which tells the shell the type of script
+echo "This is a bash script "
+
+#we need a exit code to exit the bash script 
+#1 is used as generic exit code
+#0 is common way of exiting the bash script
+exit 0
