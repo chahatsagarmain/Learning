@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Shell expansions - allows us to retrieve data,process command output,do calculations
+
+#parameter - a parameter is any entity that stores values
+#no spaces near equal to when giving a value to variable otherwise bash take it as a command
+#naming variable should in lower case as BASH variables are all upper case
+
+var="chahat"
+#the value of var is replaced by chahat 
+echo "Hello ${var}"
+#we use {} to expand the parameter
+#SHELL variables the variables provided by bash
+#HOME variable is used to store the absolute path to the current user's home directory
+
+echo $HOME
+#we can use {} or no {} for parameter expansion
+#similarly using $user will give us the user name 
+
+#HOSTNAME and HOSTYPE
+echo $HOSTNAME 
+#tells us about the name of the local user
+
+echo $HOSTTYPE
+#tells us about the type of architecture of the  processor of the system 
+
+#${var,} make our first letter lower case 
+#${var,,} make whole word lower case
+#${USER^} capitalises the first letter
+#${USER^^} capitalises the whole word
+#${#var} gives the length of the string
+#string slicing numbers=0123456789
+#${parameter:offset:length} offset is where to slice from and then we specify the length to slice
+

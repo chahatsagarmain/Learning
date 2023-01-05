@@ -1,0 +1,8 @@
+we have to add our script ot path variable so that it can be used anywhere
+from the computer , echo $PATH to check the paths and check if the script 
+path is present there  if not then we are supposed to add it
+in home directory nano ~/.profile which is a hidden folder and add the path varibel there
+export PATH = $PATH:the direcotry location
+
+after saving he chagnes we have to source the ~/.profile folder which is kind of refreshing the new changes of the folder
+
